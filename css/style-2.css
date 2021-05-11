@@ -1,0 +1,251 @@
+body{
+    background-color: #aad8d3;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.huala-1-1{
+    font-size: 7vw;
+    line-height: 8vw;
+    font-weight: 500;
+    color: black;
+}
+
+.huala-border-1{
+    padding: 3px;
+    border: 0;
+    position: relative;
+}
+
+.huala-border-1::before, .huala-border-1::after{
+    position: absolute;
+    content: "";
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.huala-border-1::after{
+    bottom: 0;
+    right: 0;
+}
+
+.huala-border-1::before{
+    top: 0;
+    left: 0;
+}
+
+.huala-border-1:hover::before, .huala-border-1:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.huala-border-1:hover::before{
+    border-top-color: #ccb78f;
+    border-right-color: #ccb78f;
+    transition: width 0.4s ease-out, height 0.4s ease-out 0.4s;
+}
+
+.huala-border-1:hover::after{
+    border-bottom-color: #ccb78f;
+    border-left-color: #ccb78f;
+    transition: border-color 0s ease-out 0.8s, width 0.4s ease-out 0.8s, height 0.4s ease-out 1.2s;
+}
+
+.end-1{
+    text-align: center;
+}
+
+.project{
+    width: 100%;
+    margin-left: 15vw;
+    margin-right: 2vw;
+}
+
+.pro-title{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.project>.pro-img-1{
+    width: 75vw;
+    height: 42vw;
+    margin-right: 5vw;
+    background-image: url(../images/Huala-4.jpg);
+    background-size: cover;
+}
+
+.project>.pro-img-2{
+    width: 75vw;
+    height: 42vw;
+    background-image: url(../images/Huala-3.jpg);
+    background-size: cover;
+}
+.pro-box{
+    display: flex;
+    width: 80vw;
+}
+
+.project>.pro-img-3{
+    width: 36vw;
+    height: 46vw;
+    background-image: url(../images/Huala-1.jpg);
+    background-size: cover;
+}
+.project>.pro-img-4{
+    width: 36vw;
+    height: 46vw;
+    margin-left: 3vw;
+    background-image: url(../images/Huala-2.jpg);
+    background-size: cover;
+}
+
+.project>.pro-box>.pro-img-5>a>img{
+    width: 36vw;
+    height: 17vw;
+}
+
+.project>.pro-box>.pro-img-6>a>img{
+    width: 36vw;
+    height: 17vw;
+    margin-left: 3vw;
+}
+
+.project>.pro-2>.text{
+    margin-top: -14vw;
+}
+
+.abt-flex{
+    display: flex;
+    padding-right: 5%;
+    margin-bottom: 15%;
+}
+
+.abt-img{
+    width: 600px;
+    height: 900px;
+    background-image: url(../images/me.jpg);
+    background-size: cover;
+}
+
+.abt-text{
+    margin-top: 5vw;
+    margin-left: 2vw;
+    padding-right: 1vw;
+    height: 800px;
+    width: 50%;
+    font-size: 1.2em;
+    overflow-y: auto;
+    
+}
+.abt-text>.text-1{
+    margin-bottom: 10%;
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+}
+
+.sk-img-1{
+    width: 120px;
+    height: 120px;
+    border-radius: 999em;
+    background-color: #ffffff;
+    background-image: url(../images/html.png);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sk-img-2{
+    width: 120px;
+    height: 120px;
+    border-radius: 999em;
+    background-color: #ffffff;
+    background-image: url(../images/css.png);
+    background-size: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sk-img-3{
+    width: 120px;
+    height: 120px;
+    border-radius: 999em;
+    background-color: #ffffff;
+    background-image: url(../images/js.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:1200px){
+    .abt-text>.text-1{
+        margin-bottom: 10%;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: black;
+    }
+    
+    
+}
+
+@media(max-width:1000px){
+    .abt-img{
+        width: 400px;
+    }
+}
+
+@media(max-width:600px){
+    .project{
+        margin-bottom: 5em;
+    }
+    .pro-box{
+        flex-wrap: wrap;
+    }
+
+    .project>.pro-img-4{
+        width: 90%;
+        height: 85vw;
+        margin-left: auto;margin-right: auto;
+        margin-top: 10vw;
+    }
+
+    .project>.pro-img-3{
+        width: 90%;
+        height: 85vw;
+        margin-left: auto;margin-right: auto;
+        
+    }
+
+    .project>.pro-box>.pro-img-5>a>img{
+        width: 90%;
+        height: 35vw;
+        margin-left: auto;margin-right: auto;
+        margin-top: 10vw;
+    } 
+
+    .project>.pro-box>.pro-img-6>a>img{
+        width: 90%;
+        height: 35vw;
+        margin-left: auto;margin-right: auto;
+        margin-top: 10vw;
+    } 
+
+    .project>.pro-2>.text{
+        margin-top: -6vw;
+    }
+
+    .abt-flex{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .abt-text{
+        font-size: 1em;
+        width: 90%;
+    }
+    
+    .abt-img{
+        width: 100%;
+        height: 100vw;
+    }
+}
