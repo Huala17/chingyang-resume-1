@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.grid{
+  width: 80%;
+  margin:0 auto;
+}
+
+.grid-item{
+    width: 400px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 10px solid #eee
+}
+
+.grid-item img{
+  width: 100%;
+}
+
+#bigimg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #bbbbbbd9;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#bigimg img{
+  max-height: 80%;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
